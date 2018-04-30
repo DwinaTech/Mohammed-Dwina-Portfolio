@@ -17,7 +17,7 @@ const Services = () => (
             <i className="fa fa-shopping-cart fa-stack-1x fa-inverse" />
           </span>
           <h4 className="service-heading">E-Commerce</h4>
-          <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          <p className="text-muted">I have great experience of creating E-commerce application with latest technolegy, which makes your application has great preformance and realy fast to access through all different search engines, beside strong securty, I will be realy hapy to receve your contact.</p>
         </div>
         <div className="col-md-4 item">
           <span className="fa-stack fa-4x">
@@ -25,7 +25,7 @@ const Services = () => (
             <i className="fa fa-laptop fa-stack-1x fa-inverse" />
           </span>
           <h4 className="service-heading">Responsive Design</h4>
-          <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          <p className="text-muted">I am highly experienced and qualifait at creating full responsive website, which compatible with all different type of devices such as PC, Laptop tablet and smartphone, all that with great deal, I will be realy hapy to receve your contact.</p>
         </div>
         <div className="col-md-4 item">
           <span className="fa-stack fa-4x">
@@ -33,7 +33,7 @@ const Services = () => (
             <i className="fa fa-lock fa-stack-1x fa-inverse" />
           </span>
           <h4 className="service-heading">Web Development</h4>
-          <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          <p className="text-muted">I have got fantastic experience of web development a cross user interface and backend, with modern web development languages beside great background of using relational and non relational database, I will be realy happy to make a great deal with you.</p>
         </div>
       </div>
     </div>

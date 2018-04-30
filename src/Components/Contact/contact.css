@@ -1,22 +1,36 @@
+#contact{
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 10em;
+}
+
+.contact-count{
+  padding-bottom: 4em;
+}
+
 .text-center h3{
   color: #ddd;
 }
+
 .main-button{
   background-color: #dc3545;
   color: #fff;
   border-color: #dc3545;
 }
+
 .main-button:hover{
   background-color: #a53c47;
   color: rgb(236, 215, 215);
   border-color: #a53c47;
 }
+
 section#contact {
   background-color: #212529;
   background-image: url("./images/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: -1em;
+  margin-top: 0;
 }
 
 section#contact .section-heading {

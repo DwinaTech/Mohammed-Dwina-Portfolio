@@ -1,13 +1,16 @@
 
-footer {
+.footer {
   padding: 25px 0;
   text-align: center;
+  background: #212529;
+  border-top: .01em solid #dc3545;
 }
 
 footer span.copyright {
   font-size: 90%;
   line-height: 40px;
   text-transform: none;
+  color: #fff;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 

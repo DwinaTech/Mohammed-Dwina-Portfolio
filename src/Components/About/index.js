@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../Footer';
 import './about.css';
 
 const About = () => (
   <section className="about-page" id="about">
-    <div className="container">
+    <div className="container about-count">
       <div className="row">
         <div className="col-lg-12 text-center">
           <h2 className="section-heading text-uppercase">About</h2>
@@ -68,7 +69,9 @@ You can explore my work on my Github portfolio: <Link target="blanket" to="https
           </ul>
         </div>
       </div>
+     
     </div>
+    <Footer />
   </section>
 
 )

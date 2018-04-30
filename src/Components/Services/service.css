@@ -1,7 +1,8 @@
 .services {
   background: #000;
   color: #bbb;
-  margin-top: -64px;
+  margin-top: -15px;
+  padding-bottom: 5em;
 }
 .service-heading {
   margin: 15px 0;

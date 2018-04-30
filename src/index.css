@@ -32,7 +32,8 @@ h6 {
 }
 
 section {
-  padding: 100px 0;
+  padding: 0 0;
+  padding-top: 5em;
 }
 
 section h2.section-heading {
@@ -52,7 +53,8 @@ section h3.section-subheading {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 0 0;
+    padding-top: 5em;
   }
 }
 

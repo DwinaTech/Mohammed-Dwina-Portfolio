@@ -1,9 +1,12 @@
 .portfolio{
-    background: #210808;
+  background: #210808;
+  padding-bottom: 5em;
 }
+
 .portfolio .portfolio-header{
-    color: #fff;
+  color: #fff;
 }
+
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px;

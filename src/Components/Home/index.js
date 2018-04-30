@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Services from '../Services';
 import Portfolio from '../Portfolio';
+import Footer from '../Footer';
 import './home.css';
 
 const greeting = "It's Nice To Meet You";
@@ -10,7 +11,7 @@ const Home = () => (
   <div className="home">
     <header className="masthead">
       <img src="images/main-wall.jpg" alt="main-wall" />
-      <div className="container">
+      <div className="container home-container">
         <div className="intro-text">
           <div className="intro-lead-in">Welcome To DwinaTech!</div>
           <div className="intro-heading text-uppercase">{greeting}</div>
@@ -20,6 +21,7 @@ const Home = () => (
     </header>
     <Services />
     <Portfolio />
+    <Footer />
   </div>
 )
 
