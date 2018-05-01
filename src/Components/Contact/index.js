@@ -8,7 +8,7 @@ const Contact = () => (
       <div className="row">
         <div className="col-lg-12 text-center">
           <h2 className="section-heading text-uppercase">Contact Us</h2>
-          <h3 className="section-subheading ">We are happy to in touch with our customers.</h3>
+          <h3 className="section-subheading ">I am happy to be in touch with my customers.</h3>
         </div>
       </div>
       <div className="row">

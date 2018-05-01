@@ -7,7 +7,7 @@ import Menu from '../Menu';
 import About from '../About';
 import Contact from '../Contact';
 
-const styles = theme => ({
+const styles = ({
   root: {
     flexGrow: 1,
     height: '100vh',
@@ -28,7 +28,7 @@ const styles = theme => ({
 });
 
 const Routes = (props) => {
-  const { classes, theme } = props;
+  const { classes } = props;
   return (
     <div className={classes.root}>
       <main className={classes.content}>
@@ -44,7 +44,6 @@ const Routes = (props) => {
 
 Routes.propTypes = {
   classes: PropTypes.object.isRequired,
-  theme: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles, { withTheme: true })(Routes);

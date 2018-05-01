@@ -34,13 +34,12 @@ class Portflio extends Component {
                 if (repo.fork === false || repo.homepage != null) {
                   return (
                     <div key={repo.id} className="col-md-4 col-sm-6 portfolio-item" >
-                      <Link className="portfolio-link" target="blancket" data-toggle="modal" to={`${repo.homepage}`} target="blanket">
+                      <Link className="portfolio-link" data-toggle="modal" to={`${repo.homepage}`} target="blanket">
                         <div className="portfolio-hover">
                           <div className="portfolio-hover-content">
                             <i className="fa fa-plus fa-3x" />
                           </div>
                         </div>
-                        {console.log(repo.name)}
                         <img className="img-fluid" src="images/main-wall.jpg" alt="" />
                       </Link>
                       <div className="portfolio-caption">
