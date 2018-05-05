@@ -9,7 +9,7 @@ import List from 'material-ui/List';
 import Typography from 'material-ui/Typography';
 import Divider from 'material-ui/Divider';
 import IconButton from 'material-ui/IconButton';
-import { Link } from "react-router-dom";
+import { withRouter, Link } from 'react-router-dom';
 import './menu.css'
 
 const drawerWidth = 240;
@@ -33,7 +33,7 @@ const styles = theme => ({
   }
 });
 
-class PersistentDrawer extends React.Component {
+class Menu extends React.Component {
   state = {
     open: false,
     anchor: 'left',
@@ -47,16 +47,16 @@ class PersistentDrawer extends React.Component {
     this.setState({ open: false });
   };
 
-  handleChangeAnchor = event => {
+  handleSideCloser = () => {
     this.setState({
-      anchor: event.target.value,
-    });
-  };
+      open: !this.state.open
+    })
+  }
 
   render() {
     const { classes } = this.props;
     const { anchor, open } = this.state;
-
+    const linkName = this.props.location.pathname.replace(/['/']/g, '');
     const drawer = (
       <Drawer
         variant="persistent"
@@ -72,11 +72,11 @@ class PersistentDrawer extends React.Component {
           </IconButton>
         </div>
         <Divider />
-        <List onClick={this.handleDrawerClose}><Link to="/">Home</Link></List>
+        <List onClick={this.handleSideCloser}><Link className={`${linkName === '' ? "active" : ""}`} to="/">Home</Link></List>
         <Divider />
-        <List onClick={this.handleDrawerClose}><Link to="/contact">Contact</Link></List>
+        <List onClick={this.handleSideCloser}><Link className={`${linkName === 'contact' ? "active" : ""}`} to="/contact">Contact</Link></List>
         <Divider />
-        <List onClick={this.handleDrawerClose}><Link to="/about">About</Link></List>
+        <List onClick={this.handleSideCloser}><Link className={`${linkName === 'about' ? "active" : ""}`} to="/about">About</Link></List>
       </Drawer>
     );
 
@@ -107,9 +107,9 @@ class PersistentDrawer extends React.Component {
             </Hidden>
             <Hidden smDown>
               <div className="list">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-                <li><Link to="/about">About</Link></li>
+                <li><Link className={`${linkName === '' ? "active" : "" }`} to="/">Home</Link></li>
+                <li><Link className={`${linkName === 'contact' ? "active" : ""}`} to="/contact">Contact</Link></li>
+                <li><Link className={`${linkName === 'about' ? "active" : ""}`} to="/about">About</Link></li>
               </div>
             </Hidden>
           </Toolbar>
@@ -119,8 +119,9 @@ class PersistentDrawer extends React.Component {
   }
 }
 
-PersistentDrawer.propTypes = {
+Menu.propTypes = {
   classes: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired
 };
 
-export default withStyles(styles, { withTheme: true })(PersistentDrawer);
+export default withStyles(styles, { withTheme: true })(withRouter(props => <Menu {...props} />));

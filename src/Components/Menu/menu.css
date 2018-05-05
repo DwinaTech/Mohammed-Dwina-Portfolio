@@ -7,6 +7,10 @@
   text-decoration: navajowhite !important;
 }
 
+.active{
+  color: #fff !important
+}
+
 .navbar-toggler {
   font-size: 12px;
   right: 0;
