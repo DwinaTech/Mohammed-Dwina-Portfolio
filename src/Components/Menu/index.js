@@ -72,7 +72,7 @@ class Menu extends React.Component {
           </IconButton>
         </div>
         <Divider />
-        <List onClick={this.handleSideCloser}><Link className={`${!linkName.includes('home') ? "active" : ""}`} to="/">Home</Link></List>
+        <List onClick={this.handleSideCloser}><Link className={`${linkName.includes('/') ? "active" : ""}`} to="/">Home</Link></List>
         <Divider />
         <List onClick={this.handleSideCloser}><Link className={`${linkName.includes('contact') ? "active" : ""}`} to="/contact">Contact</Link></List>
         <Divider />
@@ -107,7 +107,7 @@ class Menu extends React.Component {
             </Hidden>
             <Hidden smDown>
               <div className="list">
-                <li><Link className={`${!linkName.includes('Home') ? "active" : "" }`} to="/">Home</Link></li>
+                <li><Link className={`${linkName.includes('/') ? "active" : "" }`} to="/">Home</Link></li>
                 <li><Link className={`${linkName.includes('contact') ? "active" : ""}`} to="/contact">Contact</Link></li>
                 <li><Link className={`${linkName.includes('about') ? "active" : ""}`} to="/about">About</Link></li>
               </div>
