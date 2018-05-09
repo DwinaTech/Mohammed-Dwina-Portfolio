@@ -80,6 +80,11 @@
   z-index: 2;
 }
 
+.collaborate-project{
+  color: #fff;
+  padding: 1em 0 1.5em 0;
+}
+
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
