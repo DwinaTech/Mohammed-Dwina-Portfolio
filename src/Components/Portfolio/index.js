@@ -31,7 +31,41 @@ class Portflio extends Component {
           <div className="row">
             {
               this.state.repos.map((repo) => {
-                if (repo.fork === false || repo.homepage != null) {
+                if (repo.name === "DrivingSchool" ||
+                  repo.name === "beyonce-app" ||
+                  repo.name === "finish-your-job" ||
+                  repo.name === "cybers" ||
+                  repo.name === "dwinatech"
+                ) {
+                  return (
+                    <div key={repo.id} className="col-md-4 col-sm-6 portfolio-item" >
+                      <Link className="portfolio-link" data-toggle="modal" to={`${repo.homepage}`} target="blanket">
+                        <div className="portfolio-hover">
+                          <div className="portfolio-hover-content">
+                            <i className="fa fa-plus fa-3x" />
+                          </div>
+                        </div>
+                        <img className="img-fluid" src="images/main-wall.jpg" alt="" />
+                      </Link>
+                      <div className="portfolio-caption">
+                        <h4>{repo.name}</h4>
+                        <p className="text-muted">{repo.description}</p>
+                      </div>
+                    </div>
+                  )
+                }
+                return false;
+              })
+            }
+          </div>
+          <h2 className="collaborate-project">Projects that I collaborated on</h2>
+          <div className="row">
+            {
+              this.state.repos.map((repo) => {
+                if (repo.name === "Museum-Website" ||
+                  repo.name === "eribognal" ||
+                  repo.name === "legodi" 
+                ) {
                   return (
                     <div key={repo.id} className="col-md-4 col-sm-6 portfolio-item" >
                       <Link className="portfolio-link" data-toggle="modal" to={`${repo.homepage}`} target="blanket">
