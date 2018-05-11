@@ -1,24 +1,37 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import Spinner from '../Spinner';
 import './portfolio.css';
 
 class Portflio extends Component {
 
   state = {
     repos: [],
+    isLoading: false
   }
 
   componentDidMount() {
     fetch('https://api.github.com/users/DwinaTech/repos')
       .then(response => response.json())
       .then(data => {
+        this.setState({ isLoading: true })
         this.setState({
           repos: data
         })
+        this.setState({ isLoading: false })
       });
   }
 
+  displaySpinner = () =>
+    (
+      <Spinner />
+    )
+
   render() {
+    const { isLoading } = this.state
+    if (isLoading) {
+      return this.displaySpinner()
+    }
     return (
       <section className="portfolio" id="portfolio">
         <div className="container">
