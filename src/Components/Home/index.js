@@ -35,7 +35,6 @@ class Home extends Component {
               </div>
             </div>
           </header>
-          <Services />
           <Portfolio />
           <Footer />
         </div>

@@ -6,10 +6,7 @@ const Footer = () => (
   <footer className="footer">
     <div className="container">
       <div className="row">
-        <div className="col-md-4">
-          <span className="copyright">Copyright &copy; DwinaTech 2018</span>
-        </div>
-        <div className="col-md-4">
+        <div className="col-md-12"> 
           <ul className="list-inline social-buttons">
             <li className="list-inline-item">
               <Link to="https://twitter.com/diwna201" target="blanket">
@@ -27,16 +24,7 @@ const Footer = () => (
               </Link>
             </li>
           </ul>
-        </div>
-        <div className="col-md-4">
-          <ul className="list-inline quicklinks">
-            <li className="list-inline-item">
-              <Link to="#">Privacy Policy</Link>
-            </li>
-            <li className="list-inline-item">
-              <Link to="#">Terms of Use</Link>
-            </li>
-          </ul>
+          <span className="copyright">Copyright &copy; DwinaTech 2018</span> 
         </div>
       </div>
     </div>
