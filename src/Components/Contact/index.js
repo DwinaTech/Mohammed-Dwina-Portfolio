@@ -1,52 +1,47 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './contact.css';
-import Footer from '../Footer';
 
-const Contact = () => (
-  <section id="contact">
-    <div className="container contact-count">
-      <div className="row">
-        <div className="col-lg-12 text-center">
-          <h2 className="section-heading text-uppercase">Contact Us</h2>
-          <h3 className="section-subheading ">I am happy to be in touch with my customers.</h3>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-lg-12">
-          <form id="contactForm" name="sentMessage">
-            <div className="row">
-              <div className="col-md-6">
-                <div className="form-group">
-                  <input className="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name." />
-                  <p className="help-block text-danger" />
-                </div>
-                <div className="form-group">
-                  <input className="form-control" id="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address." />
-                  <p className="help-block text-danger" />
-                </div>
-                <div className="form-group">
-                  <input className="form-control" id="phone" type="tel" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number." />
-                  <p className="help-block text-danger" />
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="form-group">
-                  <textarea className="form-control" id="message" placeholder="Your Message *" required data-validation-required-message="Please enter a message." />
-                  <p className="help-block text-danger" />
-                </div>
-              </div>
-              <div className="clearfix" />
-              <div className="col-lg-12 text-center">
-                <div id="success" />
-                <button id="sendMessageButton" className="btn main-button btn-xl text-uppercase" type="submit">Send Message</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <Footer />
-  </section>
-)
+class Contact extends Component {
+  state = {
+    fullname: '',
+    email: '',
+    tel: null,
+    message: ''
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.setState({
+      fullname: '',
+      email: '',
+      tel: '',
+      message: ''
+    })
+  }
+
+  handleInputChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
+
+  render() {
+    return (
+      <section className="contact" id="contact">
+        <h2 className="section-heading text-uppercase">Contact Us</h2>
+        <h3 className="section-subheading ">I will be happy to hear you.</h3>
+        <form className="form">
+          <div className="input">
+            <input onChange={this.handleInputChange} value={this.state.fullname} type="text" name="fullname" placeholder="Your Name" />
+            <input onChange={this.handleInputChange} value={this.state.email}  type="email" name="email" placeholder="Your Email" />
+            <input onChange={this.handleInputChange} value={this.state.tel}  type="tel" name="tel" placeholder="Your Phone" />
+          </div>
+          <textarea onChange={this.handleInputChange} value={this.state.message}  name="message" rows="8" placeholder="Your Message" />
+        </form>
+        <button onClick={this.handleSubmit} type="submit">Send Message</button>
+      </section>
+    )
+  }
+}
 
 export default Contact;

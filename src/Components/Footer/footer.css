@@ -3,50 +3,25 @@
   padding: 25px 0;
   text-align: center;
   background: #212529;
-  border-top: .01em solid #dc3545;
-}
-
-footer span.copyright {
-  font-size: 90%;
-  line-height: 40px;
-  text-transform: none;
+  border-top: .1em solid #dc3545;
   color: #fff;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-footer ul.quicklinks {
-  font-size: 90%;
-  line-height: 40px;
-  margin-bottom: 0;
-  text-transform: none;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.footer .social a{
+  border: .1em solid #dc3545;
+  padding: .2em .5em;
+  margin: .5em;
+  border-radius: 50%;
+  font-size: 1.5em;
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+  color: #0077B5;
+  transition: all .5s ease-in-out
 }
 
-ul.social-buttons {
-  margin-bottom: 0;
+.footer .social a:hover{
+  background: #dc3545;
+  color: #fff;
 }
-
-ul.social-buttons li a {
-  font-size: 20px;
-  line-height: 40px;
-  display: block;
-  width: 40px;
-  height: 40px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  color: white;
-  border-radius: 100%;
-  outline: none;
-  background-color: #212529;
-}
-
-ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #dc3545;
-}
-.fa-twitter,
-.fa-facebook,
-.fa-linkedin{
- color: #0077B5;
-}
-

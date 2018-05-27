@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import Services from '../Services';
-import Portfolio from '../Portfolio';
 import Footer from '../Footer';
 import Spinner from '../Spinner';
 import './home.css';
-
-const greeting = "It's Nice To Meet You";
+import About from '../About';
+import Work from '../Work';
+import Contact from '../Contact';
 
 class Home extends Component {
 
   state = {
-    isLoading: true
+    isLoading: false
   }
 
   componentDidMount() {
@@ -20,23 +19,41 @@ class Home extends Component {
     }, 5000)
   }
 
+  showScrollButton = () => {
+    if (window.location.hash !== '#home') {
+      return <li className="move-top" onClick={this.scrolToSection}><Link to="/#home">Top</Link></li>
+    }
+    return null;
+  }
+
+  scrolToSection = (e) => {
+    e.preventDefault()
+    window.location.pathname = window.location.pathname
+  }
+
   render() {
     const { isLoading } = this.state;
     return isLoading ? <Spinner /> :
       (
-        <div className="home">
-          <header className="masthead">
-            <img src="images/main-wall.jpg" alt="main-wall" />
-            <div className="container home-container">
-              <div className="intro-text">
-                <div className="intro-lead-in">Welcome To DwinaTech!</div>
-                <div className="intro-heading text-uppercase">{greeting}</div>
-                <Link className="btn main-button btn-xl text-uppercase js-scroll-trigger" to="/about">Know Me More</Link>
+        <div className="home" id="home">
+          <div className="header">
+            <div className="content">
+              <h1>You are welcome at <strong className="main-color">DwincTech</strong></h1>
+              <h2>It is nice to meet you</h2>
+              <div className="info-list">
+                <li onClick={this.scrolToSection}><Link to="#about">About</Link></li>
+                <li onClick={this.scrolToSection}><Link to="#work">Work</Link></li>
+                <li onClick={this.scrolToSection}><Link to="#contact">Contact</Link></li>
               </div>
+              <img src="images/mrm.jpg" alt="mohammed-img" />
+              <div className="overlay" />
             </div>
-          </header>
-          <Portfolio />
+          </div>
+          <About />
+          <Work />
+          <Contact />
           <Footer />
+          {this.showScrollButton()}
         </div>
       );
   }
