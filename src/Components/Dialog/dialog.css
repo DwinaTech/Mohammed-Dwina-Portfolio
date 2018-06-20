@@ -1,0 +1,81 @@
+.card-container{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background: rgba(0, 0, 0, .7);
+}
+
+.card-container .card{
+  width: 40em;
+  min-height: 10em;
+  max-height: 50em;
+  padding: 1em;
+  position: absolute;
+  top: 12vh;
+  left: 20vw;
+  right: 0;
+  z-index: 100000;
+  box-shadow: -2px 2px 15px 0.5px #f00;
+  background: #333;
+}
+
+.card-container .card .close-card{
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  outline: none;
+  padding: .4em .8em;
+  background: #f00;
+  border-color: #f00;
+  border-bottom-right-radius: .4em;
+   border-top-left-radius: .4em;
+  transition: all .5s ease-in-out
+}
+
+.card-container .card .close-card:hover{
+  background: #a91b1b;
+  border-color: #a91b1b;
+}
+
+.card-container .card .paragraph{
+  white-space: normal !important;
+  min-height: 10em;
+}
+
+@media (max-width: 767px){
+  .card-container .card{
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  p{
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 1.4em;
+    text-align: left;
+  }
+
+  h4{
+    font-size: 1.8em;
+    text-align: left;
+  }
+  h5{
+    font-size: 1.5em;
+    text-align: left;
+  }
+  h6{
+    font-size: 1.4em;
+    text-align: left;
+  }
+
+
+}

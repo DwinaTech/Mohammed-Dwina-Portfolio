@@ -1,10 +1,7 @@
 body {
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
 .main-color{
   color: #dc3545;
 }
@@ -21,26 +18,3 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 700;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
-/* @media (max-width: 767px) {
-  .main-container{
-    max-width: 100%;
-    padding-left: 3em;
-    padding-right: 3em;
-    margin: auto;
-  }
-}
-
-@media (min-width: 992px) {
-  .main-container{
-    max-width: 100%;
-    margin: 0 3em;
-  }
-}
-
-@media (min-width: 1200px) {
-  .main-container{
-    max-width: 1000px;
-    margin: auto
-  }
-} */

@@ -2,65 +2,65 @@
   background: #fff;
   color: #ddd;
   width: 100%;
-  padding: 3em 4em 3em 3em;
+  padding: 0 4em 3em 3em;
   overflow: hidden;
   border-top: .1em solid #dc3545;
 }
 
-.about-page >h2{
-  margin-bottom: 1.5em;
+.about-page .profile,
+.about-page .skills,
+.about-page .experience{
   color: #000
 }
 
-.about-page .content{
+.about-page .profile h2,
+.about-page .skills h2,
+.about-page .experience h2{
+  padding: .5em 0;
+  margin: 0;
+}
+
+.about-page .profile > p,
+.about-page .skills li{
+  text-align: left;
+  margin: 0 ;
+  line-height: 2em;
+}
+
+.about-page .skills .content{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 8em;
+}
+
+.about-page .experience .content{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
 }
 
-.about-page .content .card-info{
-  background: #333;
-  padding: 1em;
-  border-radius: .5em;
-  box-shadow: 2px 2px 10px #ccc;
-  transition: all .5s ease-in-out
-}
-
-.about-page .content .card-info:hover{
-  transform: scale(1.1);
-  box-shadow: 0px 0px 8px 2px #dc3545
-}
-
-.about-page .content .card-info .title{
-  margin-bottom: 1em;
-}
-
-.about-page .content .card-info .data{
-  margin-bottom: 1em;
-}
-
-.about-page .content .card-info .prgrapgh{
-  text-overflow: ellipsis;
-  overflow: hidden;
-  height: 5em;
-}
-
 @media (max-width: 767px) {
   .about-page{
-    padding: 3em 1em 3em 1em;
+    padding: 2em .5em;
   }
-  .about-page .content{
+
+  .about-page h2{
+    margin-bottom: 1em;
+  }
+
+  li{
+    font-size: 1.4em;
+  }
+
+  .about-page .experience .content{
     grid-template-columns: 1fr;
   }
-  .about-page .content .card-info:hover{
-    transform: scale(1.01);
+
+  .about-page .skills{
+    text-align: left;
   }
-}
-
-@media (min-width: 992px) {
-
-}
-
-@media (min-width: 1200px) {
-
+  
+  .about-page .skills .content{
+    margin-left: 0;
+  }
 }
