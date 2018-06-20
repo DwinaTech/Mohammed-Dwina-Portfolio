@@ -88,14 +88,13 @@ class Contact extends Component {
       tel: this.state.tel
     }
     if (!error) {
-      axios.post(`${api}/contact`, data).then((err, newData) => {
-        if (err) {
+      axios.post(`${api}/contact`, data).then(newData => {
+        if (!newData || newData.length === 0) {
           this.setState({
             success: true,
             userMessage: newData.data.message
           })
           setTimeout(() => this.setState({ success: false }), 3000)
-          console.log(newData)
         }
         this.setState({
           success: true,
