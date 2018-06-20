@@ -8,18 +8,8 @@ import Contact from '../Contact';
 
 class Home extends Component {
 
-  // state = {
-  //   isLoading: false
-  // }
-
-  componentDidMount() {
-    // setTimeout(() => {
-    //   this.setState({ isLoading: false })
-    // }, 5000)
-  }
-
   showScrollButton = () => {
-    if (window.location.hash !== '#home') {
+    if (window.location.hash !== '' && window.location.hash !== '#home') {
       return <li className="move-top"><a href="#home">Top</a></li>
     }
     return null;
@@ -30,7 +20,7 @@ class Home extends Component {
       <div className="home">
         <div className="header" id="home">
           <div className="content">
-            <h1>You are welcome at <strong className="main-color">DwincTech</strong></h1>
+            <h1><strong className="main-color">DwincTech</strong></h1>
             <h2>It is nice to meet you</h2>
             <div className="info-list">
               <li><a href="#about">About</a></li>
