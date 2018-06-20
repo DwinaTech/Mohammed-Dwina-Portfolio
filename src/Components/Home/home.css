@@ -26,6 +26,7 @@
   width: 50%;
   margin: auto;
   margin-top: 1.5em;
+  justify-content: center;
 }
 
 .header .content .info-list li{
@@ -120,6 +121,14 @@
 }
 
 @media (max-width: 592px){
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-thumb {
+      display: none;
+  }
+  h2{
+    font-size: 2em;
+    font-style: italic;
+  }
   .header .content img {
     width: 140vw;
     left: -76px;

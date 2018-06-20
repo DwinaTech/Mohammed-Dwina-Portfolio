@@ -57,7 +57,7 @@
     bottom: 0;
   }
 
-  p{
+  .card-container .card .paragraph{
     overflow-y: auto;
     overflow-x: hidden;
     font-size: 1.4em;
@@ -76,6 +76,8 @@
     font-size: 1.4em;
     text-align: left;
   }
-
-
+  .card-container .card .paragraph::-webkit-scrollbar,
+  .card-container .card .paragraph::-webkit-scrollbar-thumb {
+      display: block;
+  }
 }
