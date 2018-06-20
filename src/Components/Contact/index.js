@@ -80,7 +80,7 @@ class Contact extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const error = this.validation();
-    const api = process.env.REACT_APP_HOST;
+    const api = `${process.env.REACT_APP_HOST}/api`;
     const data = {
       fullname: this.state.fullname,
       email: this.state.email,
