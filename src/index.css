@@ -1,8 +1,9 @@
 body {
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.main-color{
+  color: #dc3545;
 }
 
 p {
@@ -13,56 +14,7 @@ a {
   color: #fed136;
 }
 
-a:hover {
-  color: #fec503;
-}
-
-.text-primary {
-  color: #fed136 !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   font-weight: 700;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-section h2.section-heading {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-section h3.section-subheading {
-  font-size: 16px;
-  font-weight: 400;
-  font-style: italic;
-  margin-bottom: 75px;
-  text-transform: none;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-.team-member {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.team-member img {
-  width: 225px;
-  height: 225px;
-  border: 7px solid #fff;
-}
-
-.team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none;
-}
-
-.team-member p {
-  margin-top: 0;
 }
