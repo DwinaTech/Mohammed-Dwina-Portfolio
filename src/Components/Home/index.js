@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Footer from '../Footer';
-import Spinner from '../Spinner';
 import './home.css';
 import About from '../About';
 import Education from '../Education';
