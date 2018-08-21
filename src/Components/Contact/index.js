@@ -80,7 +80,7 @@ class Contact extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const error = this.validation();
-    const api = `${process.env.REACT_APP_HOST_API}/api`;
+    const api = process.env.REACT_APP_HOST_API;
     const data = {
       fullname: this.state.fullname,
       email: this.state.email,
@@ -88,7 +88,7 @@ class Contact extends Component {
       tel: this.state.tel
     }
     if (!error) {
-      axios.post(`${api}/contact`, data).then(newData => {
+      axios.post(`${api}/api/contact`, data).then(newData => {
         if (!newData || newData.length === 0) {
           this.setState({
             success: true,
