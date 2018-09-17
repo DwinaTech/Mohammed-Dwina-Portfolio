@@ -19,6 +19,21 @@
   color: #bbb;
 }
 
+.header .content h1,
+.header .content h2{
+  font-family: 'Kavoon', cursive;
+  font-size: 5em;
+  font-style: italic;
+}
+
+.header .content h1{
+  text-shadow: -2px 5px 10px #fff;
+}
+
+.header .content h2{
+  text-shadow: -3px 5px 18px #db3545;
+}
+
 .header .content .info-list{
   display: grid;
   grid-gap: 1em;
@@ -31,22 +46,26 @@
 
 .header .content .info-list li{
   list-style: none;
+  background: rgba(0,0,0,.6);
+  border-radius: .8em;
 }
 
 .header .content .info-list li a{
+  font-family: 'Kavoon', cursive;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid#fed126;
-  padding: .8em 1.5em;
+  border: 1px solid#ffffff;
+  color: #ffffff;
+  padding: 0.2em .5em;
   border-radius: .4em;
   transition: all .5s ease-in-out;
   display: block;
+  font-size: 2em;
 }
 
 .header .content .info-list a:hover{
-  background-color: #fed126;
-  color: #dc3545;
-  font-weight: bold
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .header .content img{
@@ -125,6 +144,12 @@
   ::-webkit-scrollbar-thumb {
       display: none;
   }
+
+  .header .content h1,
+  .header .content h2{
+    font-size: 4em;
+  }
+
   h2{
     font-size: 2em;
     font-style: italic;
@@ -139,6 +164,6 @@
   }
   
   .header .content .info-list li a{
-    padding: .5em 1em;
+    font-size: 1.5em;
   }
 }
