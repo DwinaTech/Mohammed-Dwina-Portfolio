@@ -1,9 +1,18 @@
 const data = [
   {
     id: 1,
+    company: "STV Group",
+    role: "Front-End Web Developer",
+    date: " Aug 2018 - ongoing",
+    info: `
+    I am working at different projects with different platform such as FreeView, YouView, Samsung and Roku, using latest technologies of JavaScript such React.js library, JavaScript with ES6 Syntax and others services such as Pusher.
+    `
+  },
+  {
+    id: 2,
     company: "Directory Of Services",
     role: "Junior Full Stack Developer (remote)",
-    date: " Jan 2018 - ongoing",
+    date: " Jan 2018 - Aug 2018",
     info: `
     I am working with three junior developers and two lead developers on behalf of
             a consortium of London-based NGOs to build a web application which will
@@ -16,7 +25,7 @@ const data = [
     `
   },
   {
-    id: 2,
+    id: 3,
     company: "CodeYourFuture",
     role: "Trainee Full Stack Developer",
     date: "May 2017 - Dec 2017, Glasgow",
@@ -33,7 +42,7 @@ const data = [
     `
   },
   {
-    id: 3,
+    id: 4,
     company: "J.P. Morgan",
     role: "Code for Good Hackathon",
     date: "Nov 2017, Glasgow",

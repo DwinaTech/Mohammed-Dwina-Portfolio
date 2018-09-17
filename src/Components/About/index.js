@@ -27,7 +27,7 @@ class About extends Component {
           <div className="content">
             <li><strong>Languages:</strong> HTML5, CSS3, JavaScript & Node.js</li>
             <li><strong>Libraries:</strong> React.js, Express.js, Objection.js, Knex.js, Material-ui & Bootstrap</li>
-            <li><strong>Databases:</strong> MongoDB and Sqlite3(PostgreSql)</li>
+            <li><strong>Databases:</strong> MongoDB, Sqlite(V3) and PostgreSQL</li>
           </div>
         </div>
         <div className="experience">

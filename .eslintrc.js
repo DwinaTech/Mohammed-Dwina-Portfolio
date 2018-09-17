@@ -22,6 +22,7 @@ module.exports = {
     "import/no-extraneous-dependencies": "off",
     "import/no-unresolved": "off",
     "linebreak-style": "off",
+    " jsx-a11y/href-no-hash": "off"
   },
   "settings": {
     "import/resolver": {
