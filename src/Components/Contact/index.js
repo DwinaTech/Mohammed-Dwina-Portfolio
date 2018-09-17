@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import helper from '../../helpers';
+import Spinner from '../Spinner'
 import './contact.css';
 
 class Contact extends Component {
@@ -14,7 +15,8 @@ class Contact extends Component {
     telErr: '',
     messageErr: '',
     success: false,
-    userMessage: ''
+    userMessage: '',
+    isLoading: false
   }
 
   validation = () => {
@@ -29,7 +31,7 @@ class Contact extends Component {
     } else if (fullname.length < 4) {
       isError = true;
       this.setState({
-        fullnameErr: "The name have to be longger than three characters"
+        fullnameErr: "The name have to be longer than three characters"
       })
 
     }
@@ -54,10 +56,10 @@ class Contact extends Component {
         messageErr: "Message field is required *"
       })
 
-    } else if (message.length < 20) {
+    } else if (message.length < 2) {
       isError = true;
       this.setState({
-        messageErr: "Message field have to be longger than twenty characters"
+        messageErr: "Message field have to be longer than two characters"
       })
 
     }
@@ -71,7 +73,7 @@ class Contact extends Component {
     } else if (tel.length <= 9) {
       isError = true;
       this.setState({
-        telErr: "Tel field have to be longger than nine numbers"
+        telErr: "Tel field have to be longer than nine numbers"
       })
     }
     return isError
@@ -88,11 +90,13 @@ class Contact extends Component {
       tel: this.state.tel
     }
     if (!error) {
+      this.setState({isLoading: true})
       axios.post(`${api}/api/contact`, data).then(newData => {
         if (!newData || newData.length === 0) {
           this.setState({
             success: true,
-            userMessage: newData.data.message
+            userMessage: newData.data.message,
+            isLoading: false
           })
           setTimeout(() => this.setState({ success: false }), 3000)
         }
@@ -109,6 +113,8 @@ class Contact extends Component {
         })
         setTimeout(() => this.setState({ success: false }), 3000)
       })
+    }else{
+      this.setState({isLoading: false})
     }
   }
 
@@ -156,7 +162,10 @@ class Contact extends Component {
   }
 
   render() {
-    const { fullnameErr, emailErr, telErr, messageErr } = this.state;
+    const { fullnameErr, emailErr, telErr, messageErr, isLoading } = this.state;
+    if (isLoading) {
+      return <Spinner />
+    }
     return (
       <section className="contact" id="contact">
         {this.showSuccessMesg()}
