@@ -90,7 +90,7 @@ class Contact extends Component {
       tel: this.state.tel
     }
     if (!error) {
-      this.setState({isLoading: true})
+      this.setState({ isLoading: true })
       axios.post(`${api}/api/contact`, data).then(newData => {
         if (!newData || newData.length === 0) {
           this.setState({
@@ -113,8 +113,8 @@ class Contact extends Component {
         })
         setTimeout(() => this.setState({ success: false }), 3000)
       })
-    }else{
-      this.setState({isLoading: false})
+    } else {
+      this.setState({ isLoading: false })
     }
   }
 
