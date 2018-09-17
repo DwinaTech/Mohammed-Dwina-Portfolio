@@ -98,7 +98,6 @@ class Contact extends Component {
             userMessage: newData.data.message,
             isLoading: false
           })
-          setTimeout(() => this.setState({ success: false }), 3000)
         }
         this.setState({
           success: true,
@@ -111,7 +110,7 @@ class Contact extends Component {
           telErr: '',
           userMessage: newData.data.message
         })
-        setTimeout(() => this.setState({ success: false }), 3000)
+        setTimeout(() => this.setState({ isLoading: false }), 3000)
       })
     } else {
       this.setState({ isLoading: false })
