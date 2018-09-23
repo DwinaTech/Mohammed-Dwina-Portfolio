@@ -6,15 +6,17 @@ import './education.css';
 const Education = () =>
   (
     <section className="work-page" id="education">
-      <h2>Education</h2>
-      <div className="content">
-        {
-          data.map(info => (
-            <Fragment key={info.id}>
-              <Card info={info} />
-            </Fragment>
-          ))
-        }
+      <div className="container">
+        <h2>Education</h2>
+        <div className="content">
+          {
+            data.map(info => (
+              <Fragment key={info.id}>
+                <Card info={info} />
+              </Fragment>
+            ))
+          }
+        </div>
       </div>
     </section>
   )

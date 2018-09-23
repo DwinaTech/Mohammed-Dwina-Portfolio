@@ -4,7 +4,7 @@ import './footer.css';
 
 const Footer = () => (
   <footer className="footer">
-    <div className="social">
+    <div className="container social">
       <Link to="https://twitter.com/diwna201" target="blanket">
         <i className="fa fa-twitter" />
       </Link>
