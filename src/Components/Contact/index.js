@@ -156,7 +156,11 @@ class Contact extends Component {
 
   showSuccessMesg = () => {
     if (this.state.success) {
-      return <h4 className="success-message">{this.state.userMessage}</h4>
+      return (
+        <div className="message-container">
+          <h4 className="success-message">{this.state.userMessage}</h4>
+        </div>
+      )
     }
     return null;
   }
