@@ -2,13 +2,13 @@
   background: #333;
   color: #ddd;
   width: 100%;
-  padding: 3em 4em 3em 3em;
+  padding-bottom: 3em;
   overflow: hidden;
   border-top: .1em solid #dc3545;
 }
 
-.work-page >h2{
-  margin-bottom: 1.5em;
+.work-page .container >h2{
+  margin: 1em 0;
 }
 
 .work-page .content{
@@ -33,9 +33,6 @@
 }
 
 @media (max-width: 767px) {
-  .work-page{
-    padding: 2em .5em;
-  }
   .work-page >h2{
     margin-bottom: 1em;
   }

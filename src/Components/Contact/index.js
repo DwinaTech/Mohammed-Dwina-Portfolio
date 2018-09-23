@@ -168,24 +168,26 @@ class Contact extends Component {
     }
     return (
       <section className="contact" id="contact">
-        {this.showSuccessMesg()}
-        <h2 className="section-heading text-uppercase">Contact Us</h2>
-        <h3 className="section-subheading ">I will be happy to hear you.</h3>
-        <form className="form">
-          <div className="input">
-            <input type="text" onChange={this.handleInputChange} onBlur={this.removeFullNameErr} value={this.state.fullname} name="fullname" placeholder="Your Name *" />
-            <span className="validate-error">{fullnameErr}</span>
-            <input type="email" onChange={this.handleInputChange} onBlur={this.removeEmailErr} value={this.state.email} name="email" placeholder="Your Email *" />
-            <span className="validate-error">{emailErr}</span>
-            <input type="number" onChange={this.handleInputChange} onBlur={this.removeTelErr} value={this.state.tel} name="tel" placeholder="Your Phone *" />
-            <span className="validate-error">{telErr}</span>
-          </div>
-          <span>
-            <textarea onChange={this.handleInputChange} onBlur={this.removeMessageErr} value={this.state.message} name="message" rows="8" placeholder="Your Message *" />
-            <span className="validate-error">{messageErr}</span>
-          </span>
-        </form>
-        <button onClick={this.handleSubmit} type="submit">Send Message</button>
+        <div className="container">
+          {this.showSuccessMesg()}
+          <h2 className="section-heading text-uppercase">Contact Us</h2>
+          <h3 className="section-subheading ">I will be happy to hear you.</h3>
+          <form className="form">
+            <div className="input">
+              <input type="text" onChange={this.handleInputChange} onBlur={this.removeFullNameErr} value={this.state.fullname} name="fullname" placeholder="Your Name *" />
+              <span className="validate-error">{fullnameErr}</span>
+              <input type="email" onChange={this.handleInputChange} onBlur={this.removeEmailErr} value={this.state.email} name="email" placeholder="Your Email *" />
+              <span className="validate-error">{emailErr}</span>
+              <input type="number" onChange={this.handleInputChange} onBlur={this.removeTelErr} value={this.state.tel} name="tel" placeholder="Your Phone *" />
+              <span className="validate-error">{telErr}</span>
+            </div>
+            <span>
+              <textarea onChange={this.handleInputChange} onBlur={this.removeMessageErr} value={this.state.message} name="message" rows="8" placeholder="Your Message *" />
+              <span className="validate-error">{messageErr}</span>
+            </span>
+          </form>
+          <button onClick={this.handleSubmit} type="submit">Send Message</button>
+        </div>
       </section>
     )
   }
