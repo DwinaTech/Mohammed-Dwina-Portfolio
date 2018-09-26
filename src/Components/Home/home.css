@@ -19,6 +19,28 @@
   color: #bbb;
 }
 
+.home .content .logo{
+  animation: logo 3s linear infinite
+}
+
+@keyframes logo{
+  0%{
+    font-size: 1em
+  }
+  25%{
+    font-size: 1.2em
+  }
+  50%{
+    font-size: 1.3em
+  }
+  75%{
+    font-size: 1.2em
+  }
+  100%{
+    font-size: 1em
+  }
+}
+
 .header .content h1,
 .header .content h2{
   font-family: 'Kavoon', cursive;
