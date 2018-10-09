@@ -47,6 +47,17 @@
   min-height: 10em;
 }
 
+@media (max-width: 592px){
+  .card-container .card{
+    width: 100%;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+}
+
 @media (max-width: 767px){
   .card-container .card{
     width: 100%;
