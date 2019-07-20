@@ -4,6 +4,7 @@ import './home.css';
 import About from '../About';
 import Education from '../Education';
 import Contact from '../Contact';
+import logo from '../../../public/images/mrm.jpg'
 
 class Home extends Component {
 
@@ -26,7 +27,7 @@ class Home extends Component {
               <li><a href="#contact">Contact</a></li>
               <li><a href="#education">Education</a></li>
             </div>
-            <img src="images/mrm.jpg" alt="mohammed-img" />
+            <img src={logo} alt="mohammed-img" />
             <div className="overlay" />
           </div>
         </div>
