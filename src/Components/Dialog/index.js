@@ -20,12 +20,12 @@ class Dialog extends Component {
     return (
       this.state.open ?
         <Fragment>
-          <div className="card-container">
+          <div className="dialog">
             <div className="container">
               <div className="card">
-                <h4 className="title">{info.role}</h4>
-                <h5>{info.company}</h5>
-                <h6 className="data">{info.date}</h6>
+                <h1 className="title">{info.role}</h1>
+                <h2 className="subtitle">{info.company}</h2>
+                <h3 className="sub-subtitle">{info.date}</h3>
                 <p className="paragraph">{info.info}</p>
                 <button className="close-card" onClick={this.closeCard}>Close</button>
               </div>

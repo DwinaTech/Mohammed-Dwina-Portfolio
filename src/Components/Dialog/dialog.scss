@@ -1,4 +1,6 @@
-.card-container{
+@import '../../styles/config.scss';
+
+.dialog{
   position: fixed;
   left: 0;
   right: 0;
@@ -9,34 +11,22 @@
   background: rgba(0, 0, 0, .7);
 }
 
-.card-container .card{
+.dialog .card{
   width: 40em;
   padding: 2rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 100000;
-  box-shadow: -2px 2px 15px 0.5px #f00;
+  z-index: -.1rem;
+  box-shadow: -.2rem .2rem 1.5rem 0.05rem #f00;
   background: #333;
   max-height: 90vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-.card-container .card h4{
-  font-size: 2rem;
-}
-
-.card-container .card h5{
-  font-size: 1.8rem;
-}
-
-.card-container .card h6{
-  font-size: 1.6rem;
-}
-
-.card-container .card .close-card{
+.dialog .card .close-card{
   position: absolute;
   top: 0;
   left: 0;
@@ -48,24 +38,24 @@
   background: #f00;
   border-color: #f00;
   transition: all .5s ease-in-out;
-  font-size: 1.2rem;
   border-bottom-right-radius: 1rem;
+  font-size: 1.2rem;
 }
 
-.card-container .card .close-card:hover{
+.dialog .card .close-card:hover{
   background: #a91b1b;
   border-color: #a91b1b;
 }
 
-.card-container .card .paragraph{
+.dialog .card .paragraph{
   white-space: normal !important;
   min-height: 10rem;
-  font-size: 1.5rem;
+  font-size: $paragraph-size;
   text-align: left;
 }
 
 @media (max-width: 592px){
-  .card-container .card{
+  .dialog .card{
     width: 100%;
     padding: 1em;
     position: fixed;
@@ -76,34 +66,22 @@
 }
 
 @media (max-width: 767px){
-  .card-container .card{
+  .dialog .card{
     width: 100%;
     top: 0;
     left: 0;
     bottom: 0;
   }
 
-  .card-container .card .paragraph{
+  .dialog .card .paragraph{
     overflow-y: auto;
     overflow-x: hidden;
-    font-size: 1.4em;
+    font-size: $paragraph-size;
     text-align: left;
   }
 
-  h4{
-    font-size: 1.8em;
-    text-align: left;
-  }
-  h5{
-    font-size: 1.5em;
-    text-align: left;
-  }
-  h6{
-    font-size: 1.4em;
-    text-align: left;
-  }
-  .card-container .card .paragraph::-webkit-scrollbar,
-  .card-container .card .paragraph::-webkit-scrollbar-thumb {
+  .dialog .card .paragraph::-webkit-scrollbar,
+  .dialog .card .paragraph::-webkit-scrollbar-thumb {
       display: block;
   }
 }

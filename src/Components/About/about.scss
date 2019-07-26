@@ -1,3 +1,5 @@
+@import '../../styles/config.scss';
+
 .about-page{
   background: #fff;
   color: #ddd;
@@ -5,6 +7,7 @@
   padding-bottom: 2em;
   overflow: hidden;
   border-top: .1em solid #dc3545;
+  text-align: left;
 }
 
 .about-page .profile,
@@ -13,30 +16,29 @@
   color: #000
 }
 
-.about-page .profile h2,
-.about-page .skills h2,
-.about-page .experience h2{
-  padding: .5em 0;
+.about-page .container .title {
+  padding: 1rem 0;
   margin: 0;
+  font-size: $title-size;
 }
 
 .about-page .profile > p,
 .about-page .skills li{
   text-align: left;
   margin: 0 ;
-  line-height: 2em;
+  line-height: 2.5rem;
+  font-size: $paragraph-size;
 }
 
 .about-page .skills .content{
   display: grid;
   grid-template-columns: 1fr;
-  margin-left: 8em;
 }
 
 .about-page .experience .content{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
+  grid-gap: 1rem;
 }
 
 @media (max-width: 768px) {

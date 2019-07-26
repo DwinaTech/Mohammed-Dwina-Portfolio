@@ -7,7 +7,7 @@ const Education = () =>
   (
     <section className="work-page" id="education">
       <div className="container">
-        <h2>Education</h2>
+        <h1 className="title">Education</h1>
         <div className="content">
           {
             data.map(info => (

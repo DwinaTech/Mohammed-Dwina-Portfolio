@@ -1,26 +1,26 @@
+@import '../../styles/config.scss';
+
 .contact{
   width: 100%;
   padding: 2em 0em;
   text-align: left;
-}
 
-.contact-container{
-  display: grid;
-  justify-content: center;
-}
-
-.contact-title, 
-.contact-sub-title {
-  padding: .5rem 0;
-}
-
-.contact-list {
-  width: 15rem;
-  text-align: left;
-  padding: .5rem 0;
-  margin-left: 1.1rem;
-}
-
-.contact-list li{
-  padding: .5rem 0;
+  .title {
+    padding: .5rem 0;
+    font-size: $title-size;
+  }
+  
+  .subtitle {
+    font-size: $subtitle-size;
+  }
+  
+  .contact-list {
+    padding: .5rem 0;
+    margin-left: 1.1rem;
+    font-size: $paragraph-size;
+  }
+  
+  .contact-list li{
+    padding: .5rem 0;
+  }
 }

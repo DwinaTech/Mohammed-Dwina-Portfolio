@@ -7,9 +7,9 @@ const Card = ({ info, show, closeCard}) => (
   <Fragment>
     <div className="card-info">
       <Dialog show={show} closeCard={closeCard} info={info} />
-      <h4 className="title">{info.role}</h4>
-      <h5>{info.company}</h5>
-      <h6 className="data">{info.date}</h6>
+      <h1 className="title">{info.role}</h1>
+      <h2 className="subtitle">{info.company}</h2>
+      <h3 className="sub-subtitle">{info.date}</h3>
       <p className="paragraph">{info.info}</p>
     </div>
   </Fragment>

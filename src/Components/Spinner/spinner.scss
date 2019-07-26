@@ -12,26 +12,26 @@
 }
 .spinner .circle{
     position: absolute;
-    width: 10em;
-    height: 10em;
+    width: 10rem;
+    height: 10rem;
     background: rgb(75, 71, 71, .5);
     color: #ffffff;
-    border: 6px solid #000;
+    border: .6rem solid #000;
     border-radius: 50%;
     text-align: center;
-    line-height: 9em;
+    line-height: 9rem;
 }
 
 .spinner .circle::before{
     content: '';
     position: absolute;
-    top: -6px;
-    left: -6px;
-    width: 10em;
-    height: 10em;
-    border: 6px solid transparent;
-    border-top: 6px solid #ab4444;
-    border-right: 6px solid #ab4444;
+    top: -.6rem;
+    left: -.6rem;
+    width: 10rem;
+    height: 10rem;
+    border: .6rem solid transparent;
+    border-top: .6rem solid #ab4444;
+    border-right: .6rem solid #ab4444;
     border-radius: 50%;
     animation: animate 2s linear infinite
 }

@@ -10,7 +10,7 @@ class About extends Component {
       <section className="about-page" id="about">
         <div className="container">
           <div className="profile">
-            <h2>Profile:</h2>
+            <h1 className="title">Profile:</h1>
             <p className="profile">
               I am fascinated by software development. I am enthusiastic, responsible and
               keen to learn. As a junior developer, I enjoy learning new skills and
@@ -24,7 +24,7 @@ class About extends Component {
             </p>
           </div>
           <div className="skills">
-            <h2>Skills</h2>
+            <h1 className="title">Skills:</h1>
             <div className="content">
               <li><strong>Languages:</strong> HTML5, CSS3, JavaScript & Node.js</li>
               <li><strong>Libraries:</strong> React.js, Express.js, Objection.js, Knex.js, Material-ui & Bootstrap</li>
@@ -32,7 +32,7 @@ class About extends Component {
             </div>
           </div>
           <div className="experience">
-            <h2>Experience</h2>
+            <h1 className="title">Experience:</h1>
             <div className="content">
               {
                 data.map(info =>
