@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Dialog from '../Dialog';
-import './card.css';
+import './card.scss';
 
 const Card = ({ info, show, closeCard}) => (
   <Fragment>

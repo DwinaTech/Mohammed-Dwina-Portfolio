@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import data from '../../experienceData';
 import Card from '../Card';
-import './about.css';
+import './about.scss';
 
 class About extends Component {
   test = () => { }
