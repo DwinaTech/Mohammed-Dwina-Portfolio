@@ -20,7 +20,7 @@ class Home extends Component {
       <div className="home">
         <div className="header" id="home">
           <div className="content">
-            <h1 className="title">DwincTech</h1>
+            <h1 className="title"><strong>DwincTech</strong></h1>
             <h2 className="subtitle">It is nice to meet you</h2>
             <div className="info-list">
               <li><a href="#about">About</a></li>

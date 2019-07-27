@@ -47,6 +47,10 @@
   animation: logo 3s linear infinite;  
   color: #dc3545;
   text-shadow: -.2rem .5rem 1rem #fff;
+
+  strong {
+    font-weight: bolder;
+  }
 }
 
 .header .content .subtitle {
