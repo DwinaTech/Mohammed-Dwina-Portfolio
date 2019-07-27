@@ -9,19 +9,17 @@
 }
 
 .footer .social a{
-  border: .1rem solid #dc3545;
-  padding: .2rem .5rem;
-  margin: .5rem;
+  border: .1rem solid #eeeeee;
+  padding: .2rem;
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
   border-radius: 50%;
-  font-size: 3rem;
-  width: 2rem;
-  height: 2rem;
   display: inline-block;
-  color: #0077B5;
-  transition: all .5s ease-in-out
+  transition: all .5s ease-in-out;
+
+  img{
+    width: 100%;
+  }
 }
 
-.footer .social a:hover{
-  background: #dc3545;
-  color: #fff;
-}
