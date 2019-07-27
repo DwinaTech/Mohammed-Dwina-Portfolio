@@ -26,9 +26,28 @@ class About extends Component {
           <div className="skills">
             <h1 className="title">Skills:</h1>
             <div className="content">
-              <li><strong>Languages:</strong> HTML5, CSS3, JavaScript & Node.js</li>
-              <li><strong>Libraries:</strong> React.js, Express.js, Objection.js, Knex.js, Material-ui & Bootstrap</li>
-              <li><strong>Databases:</strong> MongoDB, Sqlite(V3) and PostgreSQL</li>
+              <div>
+                <strong className="sub-subtitle">Languages:</strong>
+                <li>HTML5</li> 
+                <li>CSS3</li> 
+                <li>JavaScript</li>
+                <li>Node.js</li> 
+              </div>
+              <div>
+                <strong className="sub-subtitle">Libraries:</strong>
+                <li>React.js</li> 
+                <li>Express.js</li> 
+                <li>Objection.js</li>
+                <li>Knex.js</li> 
+                <li>Material-ui</li> 
+                <li>Bootstrap</li>
+              </div>
+              <div>
+                <strong className="sub-subtitle">Databases:</strong>
+                <li>MongoDB</li> 
+                <li>Sqlite(V3)</li> 
+                <li>PostgreSQL</li>
+              </div>
             </div>
           </div>
           <div className="experience">
