@@ -134,12 +134,12 @@
 
 ::-webkit-scrollbar {
     background-color: #000;
-    width: .8rem;
+    width: 1rem;
+    display: none;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #dc3545;
-    border-radius: .2em
 }
 
 
