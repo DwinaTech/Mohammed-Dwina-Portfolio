@@ -3,32 +3,18 @@ import PropTypes from 'prop-types';
 import './dialog.scss';
 
 class Dialog extends Component {
-  state = {
-    open: false
-  }
-
-  openCard = () => {
-    this.setState({ open: true })
-  }
-
-  closeCard = () => {
-    this.setState({ open: false })
-  }
-
   renderCard = () => {
-    const { info } = this.props;
+    const { info, open, closeCard } = this.props;
     return (
-      this.state.open ?
+      open ?
         <Fragment>
           <div className="dialog">
-            <div className="container">
-              <div className="card">
-                <h1 className="title">{info.role}</h1>
-                <h2 className="subtitle">{info.company}</h2>
-                <h3 className="sub-subtitle">{info.date}</h3>
-                <p className="paragraph">{info.info}</p>
-                <button className="close-card" onClick={this.closeCard}>Close</button>
-              </div>
+            <div className="dialog-contents">
+              <h1 className="dialog-title">{info.role}</h1>
+              <h2 className="dialog-subtitle">{info.company}</h2>
+              <h3 className="dialog-sub-subtitle">{info.date}</h3>
+              <p className="dialog-paragraph">{info.info}</p>
+              <button className="dialog-close-card" onClick={closeCard}>Close</button>
             </div>
           </div>
         </Fragment> : null
@@ -39,7 +25,6 @@ class Dialog extends Component {
     return (
       <Fragment>
         {this.renderCard()}
-        <button onClick={this.openCard} className="more-info">More</button>
       </Fragment>
     )
   }

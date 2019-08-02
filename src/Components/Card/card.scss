@@ -1,6 +1,6 @@
 @import '../../styles/config.scss';
 
-.card-info{
+.card{
   background: #333;
   padding: 1rem;
   border-radius: .5rem;
@@ -9,62 +9,82 @@
   max-width: 47rem;
   min-width: 10rem;
   position: relative;
+
+  .title,
+  .subtitle,
+  .sub-subtitle {
+    font-size: $title-size;
+    color: $title-color;
+  }
+
+  .subtitle {
+    font-size: $subtitle-size;
+    color: $subtitle-color;
+  }
+
+  .sub-subtitle {
+    font-size: $sub-subtitle-size;
+    color: $sub-subtitle-color;
+  }
+
+  .paragraph{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    color: #9e9c9c;
+    font-size: $paragraph-size;
+    color: $paragraph-color;
+  }
+
+  .close-card{
+    display: none;
+  }
+
+  .more-info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    right: 0;
+    color: #f8cc35;
+    background: rgba(0,0,0,.8);
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    display: none;
+    border: navajowhite;
+    justify-content: center;
+    border-radius: .4rem;
+    outline: navajowhite;
+    transition: all .5s ease-in-out;
+    font-size: $title-size;
+  }
+
+  &:hover .more-info{
+    display: block;
+  }
+
 }
 
-.card-info .title,
-.card-info .subtitle,
-.card-info .sub-subtitle {
-  font-size: $title-size;
-  color: $title-color;
-}
+@media (max-width: 768px){
+  .card {
+    padding-bottom: 2rem;
 
-.card-info .subtitle {
-  font-size: $subtitle-size;
-  color: $subtitle-color;
-}
-
-.card-info .sub-subtitle {
-  font-size: $sub-subtitle-size;
-  color: $sub-subtitle-color;
-}
-
-.card-info .paragraph{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-  color: #9e9c9c;
-  font-size: $paragraph-size;
-  color: $paragraph-color;
-}
-
-.card-info .close-card{
-  display: none;
-}
-
-.more-info{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 1000;
-  right: 0;
-  color: #f8cc35;
-  background: rgba(0,0,0,.8);
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  display: none;
-  border: navajowhite;
-  justify-content: center;
-  border-radius: .4rem;
-  outline: navajowhite;
-  transition: all .5s ease-in-out;
-  font-size: $title-size;
-}
-
-.card-info:hover .more-info{
-  display: block;
+    .more-info{
+      display: block;
+      width: 4rem;
+      height: 2rem;
+      top: unset;
+      background: #f00;
+      color: #fff;
+      font-size: 1.2rem;
+      bottom: 0;
+      left: 0;
+      border-radius: 0 .4rem 0 .4rem;
+    }
+  }
 }
