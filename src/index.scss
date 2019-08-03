@@ -3,25 +3,22 @@
   padding: 0;
 }
 
+html{
+  font-size: 10px;
+}
+
 body {
-  overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-.main-color{
-  color: #dc3545;
-}
-
-p {
-  line-height: 1.75;
-}
-
-a {
-  color: #fed136;
+  background: #ededed
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: 650;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+p {
+  line-height: 4rem;
 }
 
 .container {
@@ -30,47 +27,3 @@ h1,h2,h3,h4,h5,h6 {
   padding-right: 15px;
   margin: auto;
 }
-
-/* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) { 
-  container{
-    max-width: 540px;
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-right: auto;
-    margin-left: auto;
-  }
- } */
-
-/* Medium devices (tablets, 768px and up)  */
-/* @media (min-width: 768px) { 
-  container{
-    max-width: 720px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-right: auto;
-    margin-left: auto;
-  }
- } */
-
-/* Large devices (desktops, 992px and up)  */
-/* @media (min-width: 992px) { 
-  container{
-    max-width: 960px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-right: auto;
-    margin-left: auto;
-  }
- } */
-
-/* Extra large devices (large desktops, 1200px and up)  */
-/* @media (min-width: 1200px) { 
-  container{
-    max-width: 1170px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
- } */

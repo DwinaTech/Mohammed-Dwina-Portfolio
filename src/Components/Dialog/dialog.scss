@@ -11,23 +11,25 @@
   background: rgba(0, 0, 0, .7);
 
   .dialog-contents{
-    width: 40em;
-    padding: 2rem;
+    min-width: 75rem;
+    padding: 4rem 1rem 1rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    box-shadow: -.2rem .2rem 1.5rem 0.05rem #f00;
+    border: .4rem solid #a91b1b;
     background: #333;
     max-height: 90vh;
     overflow-y: scroll;
+    border-radius: .4rem;
 
     .dialog-title,
     .dialog-subtitle,
     .dialog-sub-subtitle {
       font-size: $title-size;
       color: $title-color;
+      padding: .5rem;
     }
   
     .dialog-subtitle {
@@ -58,42 +60,32 @@
       display: block;
       outline: none;
       padding: .4em .8em;
-      background: #f00;
-      border-color: #f00;
+      background: #a91b1b;
+      border-color: #a91b1b;
       transition: all .5s ease-in-out;
       border-bottom-right-radius: 1rem;
-      font-size: 1.2rem;
+      font-size: 2rem;
     }
 
     .dialog-close-card:hover{
-      background: #a91b1b;
-      border-color: #a91b1b;
+      background: #f00;
+      border-color: #f00;
     }
 
   }
 
 }
-
-@media (max-width: 592px){
-  .dialog .dialog-dialog-contents{
-    width: 100%;
-    padding: 1em;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(0, 0);
-    max-height: 100vh;
-  }
-}
-
-@media (max-width: 767px){
+@media (max-width: 768px){
   .dialog .dialog-contents{
-    width: 100%;
+    min-width: 100%;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     max-height: 100vh;
     transform: translate(0,0);
+    border-radius: 0;
+    border: none;
 
     .dialog-paragraph{
       overflow-y: auto;
@@ -102,4 +94,12 @@
       text-align: left;
     } 
   } 
+}
+
+@media (max-width: 592px){
+  .dialog {
+    .dialog-dialog-contents{
+      padding: 1em;
+    }
+  }
 }

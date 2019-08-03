@@ -24,19 +24,19 @@
 
 @keyframes logo{
   0%{
-    font-size: 3rem;
+    font-size: 5rem;
   }
   25%{
-    font-size: 4rem
+    font-size: 6rem
   }
   50%{
-    font-size: 5rem
+    font-size: 7rem
   }
   75%{
-    font-size: 4rem
+    font-size: 6rem
   }
   100%{
-    font-size: 3rem
+    font-size: 5rem
   }
 }
 
@@ -54,7 +54,7 @@
 }
 
 .header .content .subtitle {
-  font-size: 5rem;
+  font-size: 8rem;
   font-family: 'Kavoon', cursive;
   font-style: italic;
   text-shadow: -.3rem .5rem 1.8rem #db3545;
@@ -82,11 +82,11 @@
   cursor: pointer;
   border: .1rem solid#ffffff;
   color: #ffffff;
-  padding: 0.2em .5rem;
+  padding: 0.2em 1rem;
   border-radius: .4rem;
   transition: all .5s ease-in-out;
   display: block;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .header .content .info-list a:hover{
@@ -166,6 +166,18 @@
   }
 }
 
+@media (max-width: 768px) {
+  .header {
+    .content {
+      .subtitle {
+        line-height: 5rem;
+        font-size: 6rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 592px){
   ::-webkit-scrollbar,
   ::-webkit-scrollbar-thumb {
@@ -191,6 +203,6 @@
   }
   
   .header .content .info-list li a{
-    font-size: 1.5rem;
+    font-size: 3.5rem;
   }
 }

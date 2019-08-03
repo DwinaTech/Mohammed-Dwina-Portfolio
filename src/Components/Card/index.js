@@ -23,11 +23,11 @@ class Card extends React.Component {
       <Fragment>
         <div className="card">
           <Dialog open={open} closeCard={this.closeCard} info={info} />
-          <h1 className="title">{info.role}</h1>
-          <h2 className="subtitle">{info.company}</h2>
-          <h3 className="sub-subtitle">{info.date}</h3>
-          <p className="paragraph">{info.info}</p>
-          <button onClick={this.openCard} className="more-info">More</button>
+          <h1 className="card-title">{info.role}</h1>
+          <h2 className="card-subtitle">{info.company}</h2>
+          <h3 className="card-sub-subtitle">{info.date}</h3>
+          <p className="card-paragraph">{info.info}</p>
+          <button onClick={this.openCard} className="card-more-info">More</button>
         </div>
       </Fragment>
     )

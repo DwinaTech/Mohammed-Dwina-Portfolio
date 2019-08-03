@@ -8,7 +8,7 @@ class Dialog extends Component {
     return (
       open ?
         <Fragment>
-          <div className="dialog">
+          <div onClick={closeCard} className="dialog">
             <div className="dialog-contents">
               <h1 className="dialog-title">{info.role}</h1>
               <h2 className="dialog-subtitle">{info.company}</h2>

@@ -11,7 +11,7 @@ class About extends Component {
         <div className="container">
           <div className="profile">
             <h1 className="title">Profile:</h1>
-            <p className="profile">
+            <p className="paragraph">
               I am fascinated by software development. I am enthusiastic, responsible and
               keen to learn. As a junior developer, I enjoy learning new skills and
               responsibilities in both frontend and backend roles. I like working with design
