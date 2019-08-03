@@ -92,7 +92,7 @@
     }
   }
   img {
-    width: 100vw;
+    width: 105%;
     height: 100vh;
   }
 }
@@ -147,6 +147,10 @@
         font-size: 6rem;
         margin-bottom: 2.5rem;
       }
+    }
+
+    img {
+      width: 100%;
     }
   }
 }

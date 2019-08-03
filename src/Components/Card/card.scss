@@ -78,15 +78,18 @@
 
     .card-more-info{
       display: block;
-      width: 5rem;
+      width: 6rem;
       height: 3rem;
       top: unset;
       background: #f00;
       color: #fff;
       font-size: 1.8rem;
       bottom: 0;
-      left: 0;
-      border-radius: 0 .4rem 0 .4rem;
+      left: unset;
+      right: 0px;
+      border-radius: 0.4rem 0 .4rem 0;
+      font-style: oblique;
+      font-weight: bold;
     }
   }
 }
