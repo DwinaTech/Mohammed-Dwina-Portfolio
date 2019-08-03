@@ -18,18 +18,18 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-        <div className="header" id="home">
-          <div className="content">
-            <h1 className="title"><strong>DwincTech</strong></h1>
-            <h2 className="subtitle">It is nice to meet you</h2>
-            <div className="info-list">
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#education">Education</a></li>
+      <div className="header container" id="home">
+      <div className="overlay" />
+            <div className="content">
+              <h1 className="title"><strong>DwincTech</strong></h1>
+              <h2 className="subtitle">It is nice to meet you</h2>
+              <div className="info-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#education">Education</a></li>
+              </div>
             </div>
             <img src={logo} alt="mohammed-img" />
-            <div className="overlay" />
-          </div>
         </div>
         <About />
         <Education />

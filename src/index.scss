@@ -26,4 +26,9 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
