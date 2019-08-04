@@ -5,7 +5,11 @@ const data = [
     role: "Front-End Web Developer",
     date: " Aug 2018 - ongoing",
     info: `
-    I am working at different projects with different platform such as FreeView, YouView, Samsung and Roku, using latest technologies of JavaScript such React.js library, JavaScript with ES6 Syntax and others services such as Pusher.
+    I am working in STV Player for TV platforms, my main responsibility to deliver new features, add Adobe tracking DTM functionalities, writing unit tests, continuous refactoring, helping other developers in the team and fixing any bug reported by Opps team, the App we are building is a HbbTV App which should be compatible with different TV platforms, the platforms I am working at are FireTV, Virgin Media, Samsung, Freeview and Freesat.
+    TV set-top boxes are different modals most of them are old, so I am responsible to make sure to do proper optimization for improving memory usage and performance.  
+    The technologies I am using are React.js, Redux,  JavaScript (ES6 syntax), Sass, CSS3, HTML5, Webpack.
+    The tools I am using are Eslint, babel,  prettier and Chrome Dev.
+    The version control system I am using is Git and Github.
     `
   },
   {

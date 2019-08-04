@@ -28,26 +28,40 @@ class About extends Component {
             <div className="content">
               <div>
                 <strong className="sub-subtitle">Languages:</strong>
-                <li>HTML5</li> 
                 <li>CSS3</li> 
-                <li>JavaScript</li>
+                <li>HTML5</li> 
                 <li>Node.js</li> 
+                <li>JavaScript (ES6)</li>
               </div>
               <div>
                 <strong className="sub-subtitle">Libraries:</strong>
-                <li>React.js</li> 
-                <li>Express.js</li> 
-                <li>Objection.js</li>
                 <li>Knex.js</li> 
-                <li>Material-ui</li> 
                 <li>Bootstrap</li>
+                <li>Express.js</li> 
+                <li>Material-ui</li> 
+                <li>Objection.js</li>
+                <li>React.js (Hook)</li> 
+              </div>
+              <div>
+                <strong className="sub-subtitle">Tools:</strong>
+                <li>Eslint</li> 
+                <li>Webpack</li> 
+                <li>Chrome Dev</li>
+                <li>Git & Github</li>
+              </div>
+              <div>
+                <strong className="sub-subtitle">Uint Test:</strong>
+                <li>Jest</li> 
+                <li>Enzyme</li> 
+                <li>React-test</li>
+                <li>SupperTest</li>
               </div>
               <div>
                 <strong className="sub-subtitle">Databases:</strong>
-                <li>MongoDB</li> 
                 <li>Sqlite(V3)</li> 
+                <li>MongoDB</li> 
                 <li>PostgreSQL</li>
-              </div>
+                </div>
             </div>
           </div>
           <div className="experience">
