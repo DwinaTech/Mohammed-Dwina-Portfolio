@@ -6,7 +6,7 @@
   border-radius: .5rem;
   box-shadow: .2rem .2rem 10rem #ccc;
   transition: all .5s ease-in-out;
-  max-width: 47rem;
+  max-width: 100%;
   min-width: 10rem;
   position: relative;
 
@@ -74,7 +74,6 @@
 @media (max-width: 768px){
   .card {
     padding-bottom: 3rem;
-    max-width: 100%;
 
     .card-more-info{
       display: block;

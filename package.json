@@ -1,7 +1,8 @@
 {
-  "name": "dwina-client",
+  "name": "dwinatech",
   "version": "0.1.0",
   "private": true,
+  "main": "server.js",
   "dependencies": {
     "@material-ui/icons": "^1.0.0-beta.43",
     "dotenv": "^5.0.1",
@@ -13,9 +14,10 @@
     "react-router-dom": "^4.2.2"
   },
   "scripts": {
-    "start": "webpack-dev-server --open --hot",
-    "build": "webpack mode production",
-    "lint": "./node_modules/.bin/eslint src"
+    "app": "webpack-dev-server --open --hot",
+    "start": "node server.js",
+    "lint": "./node_modules/.bin/eslint src",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
