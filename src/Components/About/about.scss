@@ -28,6 +28,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
 
+        div{
+          margin-bottom: 2.5rem;
+        }
+
         .sub-subtitle {
           font-size: $sub-subtitle-size;
           line-height: 2.5rem;

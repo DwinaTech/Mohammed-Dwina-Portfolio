@@ -5,11 +5,9 @@ import './App.scss';
 
 const App = () => (
   <div className="App">
-    <div>
-      <Router>
-        <Routes />
-      </Router>  
-    </div>
+    <Router>
+      <Routes />
+    </Router>  
   </div>
 );
 
