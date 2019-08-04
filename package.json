@@ -14,10 +14,11 @@
     "react-router-dom": "^4.2.2"
   },
   "scripts": {
-    "app": "webpack-dev-server --open --hot",
     "start": "node server.js",
     "lint": "./node_modules/.bin/eslint src",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --open --hot",
+    "heroku-postbuild": "webpack --mode production"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
