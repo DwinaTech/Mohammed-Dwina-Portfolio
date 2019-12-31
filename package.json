@@ -13,12 +13,16 @@
     "react-router-dom": "^4.2.2"
   },
   "scripts": {
+    "heroku-postbuild": "npm run build",
     "start": "node server.js",
     "lint": "./node_modules/.bin/eslint src",
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --open --hot",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "engines": {
+    "node": ">=10.10.0",
+    "npm": ">=6.10.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
