@@ -34,8 +34,9 @@ class Home extends Component {
       <div className="home">
         {loaded && <Spinner />}
         <div className="header container" id="home">
-          <div className="overlay" />
           <div className="content">
+            <img onLoad={this.onLoad} src={logo} alt="mohammed-img" />
+            <div className="content-text">
             <h1 className="title">
               <strong>DwincTech</strong>
             </h1>
@@ -51,8 +52,8 @@ class Home extends Component {
                 <a href="#education">Education</a>
               </li>
             </div>
+            </div>
           </div>
-          <img onLoad={this.onLoad} src={logo} alt="mohammed-img" />
         </div>
         <About />
         <Education />
