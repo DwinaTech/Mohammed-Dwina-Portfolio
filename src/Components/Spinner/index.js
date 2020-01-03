@@ -5,7 +5,7 @@ function Spinner() {
     return (
       <div className="spinner">
         <div className="circle">
-            Loding...
+            <label>Loding...</label>
           <div className="circle-child" />
         </div>
       </div>
