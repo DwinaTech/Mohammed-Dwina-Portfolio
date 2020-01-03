@@ -4,9 +4,13 @@ import './home.scss';
 import About from '../About';
 import Education from '../Education';
 import Contact from '../Contact';
+import Spinner from '../Spinner';
 import logo from '../../../public/images/mrm.jpg'
 
 class Home extends Component {
+  state = {
+    loaded: true,
+  }
 
   showScrollButton = () => {
     if (window.location.hash !== '' && window.location.hash !== '#home') {
@@ -15,9 +19,16 @@ class Home extends Component {
     return null;
   }
 
+  onLoad = () => {
+    this.setState({ loaded: false });
+  }
+
   render() {
+    const { loaded } = this.state;
+
     return (
       <div className="home">
+      {loaded && <Spinner />}
       <div className="header container" id="home">
       <div className="overlay" />
             <div className="content">
@@ -29,7 +40,7 @@ class Home extends Component {
                 <li><a href="#education">Education</a></li>
               </div>
             </div>
-            <img src={logo} alt="mohammed-img" />
+            <img onLoad={this.onLoad} src={logo} alt="mohammed-img" />
         </div>
         <About />
         <Education />
