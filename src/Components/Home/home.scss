@@ -1,51 +1,51 @@
 @import "../../styles/config.scss";
 
+.home .header.container {
+  padding: 0;
+}
+
 .home {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 .header {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: relative;
-  overflow: hidden;
   display: flex;
+  overflow: auto;
   justify-content: center;
   align-items: center;
-
-  .overlay {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-  }
+  background: rgba(0, 0, 0, 0.4);
 
   .content {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
-    transform: translate(0, 30%);
     z-index: 2;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .title {
-      font-size: 10rem;
-      font-family: "Kavoon", cursive;
-      font-style: italic;
-      animation: logo 3s linear infinite;
-      color: #dc3545;
-      text-shadow: -0.2rem 0.5rem 1rem #fff;
+    .content-text {
+      position: absolute;
 
-      strong {
-        font-weight: bolder;
+      .title {
+        font-size: 10rem;
+        font-family: "Kavoon", cursive;
+        font-style: italic;
+        animation: logo 3s linear infinite;
+        color: #dc3545;
+        text-shadow: -0.2rem 0.5rem 1rem #fff;
+
+        strong {
+          font-weight: bolder;
+        }
       }
     }
 
@@ -90,10 +90,11 @@
       background-color: #ffffff;
       color: #000000;
     }
-  }
-  img {
-    width: 105%;
-    height: 100vh;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -133,42 +134,47 @@
   font-weight: bold;
 }
 
-@media (max-width: 1200px) {
-  .home .header.container {
-    padding: 0;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header {
     .content {
-      .subtitle {
-        line-height: 5rem;
-        font-size: 6rem;
-        margin-bottom: 2.5rem;
+      padding-bottom: 1rem;
+      .content-text {
+        .subtitle {
+          line-height: 5rem;
+          font-size: 6rem;
+          margin-bottom: 2.5rem;
+        }
       }
     }
 
     img {
       width: 100%;
+      height: auto;
+      display: flex;
+      align-self: flex-start;
     }
   }
 }
 
-@media (max-width: 592px) {
+@media (max-width: 591px) {
   .header {
     .content {
-      transform: translate(0, 10%);
-      .info-list {
-        grid-template-columns: 1fr;
-        width: 20%;
+      display: block;
+      .content-text {
+        position: relative;
+        top: -8rem;
+        .info-list {
+          grid-template-columns: 1fr;
+          width: 20%;
 
-        li {
-          a {
-            font-size: 3.5rem;
+          li {
+            a {
+              font-size: 3.5rem;
+            }
           }
         }
       }
     }
   }
 }
+
