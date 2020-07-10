@@ -9,3 +9,5 @@ I am crazy about coding, problems solving and team collaboration. :purple_heart:
 I like to create, build and making new things, briefly I like discovering new useful things. :house_with_garden:	
 
 I am also like a social gathering, meet new friends, watching films, football and go to the gym. :soccer:	:film_projector:	
+
+Feel free to get on touch.  :call_me_hand:	
