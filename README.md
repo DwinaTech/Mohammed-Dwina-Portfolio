@@ -1,11 +1,11 @@
 # Helloooo
 
-You are welcome to my world.
+You are welcome to my world. :wave:
 
-I am Mohammed Dwina, I am a JavaScript software engineer.
+I am Mohammed Dwina, I am a JavaScript software engineer. :sunglasses:	
 
-I am crazy about coding, problems solving and team collaboration.
+I am crazy about coding, problems solving and team collaboration. :purple_heart:	
 
-I like to create, build and making new things, briefly I like discovering new useful things.
+I like to create, build and making new things, briefly I like discovering new useful things. :house_with_garden:	
 
-I am also like a social gathering, meet new friends, watching films, football and go to the gym.
+I am also like a social gathering, meet new friends, watching films, football and go to the gym. :soccer:	:film_projector:	
