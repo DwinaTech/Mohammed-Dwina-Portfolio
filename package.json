@@ -1,50 +1,25 @@
 {
   "name": "dwinatech",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://dwinatech.github.io/dwinatech",
+  "version": "2.0.0",
+  "description": "Personal portfolio",
   "main": "server.js",
-  "dependencies": {
-    "dotenv": "^5.0.1",
-    "express": "^4.17.1",
-    "gh-pages": "^2.1.1",
-    "lodash": "^4.17.20",
-    "react": "^17.0.1",
-    "react-dom": "^16.3.3",
-    "react-router-dom": "^4.2.2"
-  },
   "scripts": {
-    "heroku-postbuild": "npm run build",
     "start": "node server.js",
-    "lint": "./node_modules/.bin/eslint src",
-    "build": "webpack --mode production",
-    "dev": "webpack-dev-server --open --hot",
-    "deploy": "gh-pages -d build"
+    "heroku-postbuild": "npm --prefix client run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm --prefix server install && npm --prefix client install"
   },
-  "engines": {
-    "node": ">=10.10.0",
-    "npm": ">=6.10.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DwinaTech/DwinaTech.git"
   },
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^3.1.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-react": "^7.7.0",
-    "file-loader": "^4.1.0",
-    "font-awesome": "^4.7.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^5.0.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^5.10.1",
-    "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.11.0"
+  "author": "Mohammed Dwina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DwinaTech/DwinaTech/issues"
+  },
+  "homepage": "https://github.com/DwinaTech/DwinaTech#readme",
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }

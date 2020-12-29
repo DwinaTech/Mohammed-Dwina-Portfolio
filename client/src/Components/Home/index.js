@@ -5,11 +5,12 @@ import About from "../About";
 import Education from "../Education";
 import Contact from "../Contact";
 import Spinner from "../Spinner";
-import logo from "../../../public/images/mrm.jpg";
+
+const logo = `${process.env.PUBLIC_URL}/images/mrm.jpg`;
 
 class Home extends Component {
   state = {
-    loaded: true
+    loaded: true,
   };
 
   showScrollButton = () => {
@@ -37,21 +38,21 @@ class Home extends Component {
           <div className="content">
             <img onLoad={this.onLoad} src={logo} alt="mohammed-img" />
             <div className="content-text">
-            <h1 className="title">
-              <strong>DwincTech</strong>
-            </h1>
-            <h2 className="subtitle">It is nice to meet you</h2>
-            <div className="info-list">
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-              <li>
-                <a href="#education">Education</a>
-              </li>
-            </div>
+              <h1 className="title">
+                <strong>DwincTech</strong>
+              </h1>
+              <h2 className="subtitle">It is nice to meet you</h2>
+              <div className="info-list">
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+                <li>
+                  <a href="#education">Education</a>
+                </li>
+              </div>
             </div>
           </div>
         </div>
