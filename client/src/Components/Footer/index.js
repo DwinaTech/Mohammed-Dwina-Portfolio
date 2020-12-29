@@ -12,18 +12,23 @@ const fullYear = date.getFullYear();
 const Footer = () => (
   <footer className="footer">
     <div className="container social">
-      <Link to="https://twitter.com/diwna201" target="blanket">
+      <a href="https://twitter.com/diwna201" target="_blank" rel="noopener">
         <img src={twitter} alt="twitter" />
-      </Link>
-      <Link to="https://www.facebook.com/DwinaTech/" target="blanket">
+      </a>
+      <a
+        href="https://www.facebook.com/DwinaTech/"
+        target="_blank"
+        rel="noopener"
+      >
         <img src={facebook} alt="facebook" />
-      </Link>
-      <Link
-        to="https://www.linkedin.com/in/mohammed-dwina-3842b1141/"
-        target="blanket"
+      </a>
+      <a
+        href="https://www.linkedin.com/in/mohammed-dwina-3842b1141/"
+        target="_blank"
+        rel="noopener"
       >
         <img src={linkedIn} alt="linkedIn" />
-      </Link>
+      </a>
     </div>
     <span className="copyright">&copy; Copy rights DwinaTech {fullYear}</span>
   </footer>
