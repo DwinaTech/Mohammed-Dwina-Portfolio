@@ -8,7 +8,7 @@
   padding-bottom: 3rem;
   overflow: hidden;
   text-align: left;
-  color: #c9d1d9;
+  color: #a1a6ab;
   background-image: linear-gradient(to bottom right, #121212, #3d4a5d);
 
   .profile {
@@ -53,9 +53,6 @@
 }
 
 @media (max-width: 768px) {
-  .about-page .experience .content {
-    grid-template-columns: 1fr;
-  }
   .about-page .skills .content {
     display: grid;
     grid-template-columns: 1fr;
