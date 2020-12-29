@@ -1,46 +1,48 @@
-@import '../../styles/config.scss';
+@import "../../styles/config.scss";
 
-.work-page{
+.work-page {
   background: #333;
   color: #ddd;
   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
   padding-bottom: 3rem;
   overflow: hidden;
-  border-top: .1rem solid #dc3545;
+  border-top: 0.1rem solid #dc3545;
   text-align: left;
 }
 
-.work-page .container .title{
+.work-page .container .title {
   font-size: $title-size;
   padding: 2.5rem 0;
 }
 
-.work-page .content{
+.work-page .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
 }
 
-.work-page .content .card-info{
+.work-page .content .card-info {
   background: #000;
   padding: 1rem;
-  border-radius: .5rem;
-  box-shadow: .2rem .2rem .3rem #575151;
-  transition: all .5s ease-in-out;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.3rem #575151;
+  transition: all 0.5s ease-in-out;
   max-width: 47rem;
   min-width: 10rem;
 }
 
-
-.work-page .content .card-info .data{
+.work-page .content .card-info .data {
   margin-bottom: 1rem;
 }
 
 @media (max-width: 767px) {
-  .work-page .title{
+  .work-page .title {
     margin-bottom: 1rem;
   }
-  .work-page .content{
+  .work-page .content {
     grid-template-columns: 1fr;
   }
 }

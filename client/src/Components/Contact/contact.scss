@@ -1,26 +1,30 @@
-@import '../../styles/config.scss';
+@import "../../styles/config.scss";
 
-.contact{
+.contact {
   width: 100%;
+  min-height: 100vh;
+  display: flex;
   padding: 2em 0em;
   text-align: left;
+  color: #c9d1d9;
+  background-image: linear-gradient(to bottom right, #121212, #3d4a5d);
 
   .title {
-    padding: .5rem 0;
+    padding-bottom: 2.5rem;
     font-size: $title-size;
   }
-  
+
   .subtitle {
     font-size: $subtitle-size;
   }
-  
+
   .contact-list {
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     list-style: none;
     font-size: $paragraph-size;
   }
-  
-  .contact-list li{
-    padding: .5rem 0;
+
+  .contact-list li {
+    padding: 0.5rem 0;
   }
 }

@@ -1,11 +1,15 @@
-@import '../../styles/config.scss';
+@import "../../styles/config.scss";
 
-.about-page{
+.about-page {
   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
   padding-bottom: 3rem;
   overflow: hidden;
   text-align: left;
-  color: #000;
+  color: #c9d1d9;
+  background-image: linear-gradient(to bottom right, #121212, #3d4a5d);
 
   .profile {
     .title {
@@ -18,53 +22,41 @@
     }
   }
 
-    .skills {
-      .title {
-        font-size: $title-size;
-        padding: 2.5rem 0;
+  .skills {
+    .title {
+      font-size: $title-size;
+      padding: 2.5rem 0;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      div {
+        margin-bottom: 2.5rem;
       }
 
-      .content{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-
-        div{
-          margin-bottom: 2.5rem;
-        }
-
-        .sub-subtitle {
-          font-size: $sub-subtitle-size;
-          line-height: 2.5rem;
-          padding-bottom: 1.5rem;
-          display: block;
-        }
-    
-        li{
-          margin: 0 ;
-          line-height: 3rem;
-          font-size: $paragraph-size;
-        }
+      .sub-subtitle {
+        font-size: $sub-subtitle-size;
+        line-height: 2.5rem;
+        padding-bottom: 1.5rem;
+        display: block;
       }
-    } 
 
-    .experience {
-      .title {
-        font-size: $title-size;
-        padding: 2.5rem 0;
+      li {
+        margin: 0;
+        line-height: 3rem;
+        font-size: $paragraph-size;
       }
-      .content{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
-      }
-    } 
+    }
+  }
 }
 
 @media (max-width: 768px) {
-  .about-page .experience .content{
+  .about-page .experience .content {
     grid-template-columns: 1fr;
   }
-  .about-page .skills .content{
+  .about-page .skills .content {
     display: grid;
     grid-template-columns: 1fr;
   }
