@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 import data from "../../experienceData";
 import Card from "../Card";
 import "./style.scss";

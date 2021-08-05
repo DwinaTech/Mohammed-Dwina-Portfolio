@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./footer.scss";
 
 const facebook = `${process.env.PUBLIC_URL}/images/facebook.png`;

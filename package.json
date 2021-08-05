@@ -1,25 +1,26 @@
 {
-  "name": "dwinatech",
-  "version": "2.0.0",
-  "description": "Personal portfolio",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "heroku-postbuild": "npm --prefix client run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "npm --prefix server install && npm --prefix client install"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DwinaTech/DwinaTech.git"
-  },
-  "author": "Mohammed Dwina",
+  "name": "Dwinatech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DwinaTech/DwinaTech/issues"
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html"
   },
-  "homepage": "https://github.com/DwinaTech/DwinaTech#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.37.5"
   }
 }
