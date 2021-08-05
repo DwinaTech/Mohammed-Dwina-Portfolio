@@ -34,9 +34,8 @@ const Home = () => {
           <img onLoad={onLoad} src={logo} alt="mohammed-img" />
           <div className="content-text">
             <h1 className="title">
-              <strong>DwincTech</strong>
+              <strong>It is nice to meet you</strong>
             </h1>
-            <h2 className="subtitle">It is nice to meet you</h2>
             <div className="info-list">
               <li>
                 <a href="#about">About</a>
