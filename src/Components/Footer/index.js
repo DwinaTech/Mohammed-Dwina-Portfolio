@@ -1,9 +1,8 @@
 import React from "react";
 import "./footer.scss";
-
-const facebook = `${process.env.PUBLIC_URL}/images/facebook.png`;
-const twitter = `${process.env.PUBLIC_URL}/images/twitter.png`;
-const linkedIn = `${process.env.PUBLIC_URL}/images/linkedIn.png`;
+import facebook from "../../assets/images/facebook.png";
+import twitter from "../../assets/images/twitter.png";
+import linkedIn from "../../assets/images/linkedIn.png";
 
 const date = new Date();
 const fullYear = date.getFullYear();

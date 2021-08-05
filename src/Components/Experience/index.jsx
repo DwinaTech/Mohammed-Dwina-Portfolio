@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import data from "../../experienceData";
+import data from "../../assets/data/experienceData";
 import Card from "../Card";
 import "./style.scss";
 

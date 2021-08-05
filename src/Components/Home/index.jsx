@@ -6,11 +6,10 @@ import Education from "../Education";
 import Contact from "../Contact";
 import Spinner from "../Spinner";
 import Experience from "../Experience";
-
-const logo = `${process.env.PUBLIC_URL}/images/mrm.jpg`;
+import logo from "../../assets/images/mrm.jpg";
 
 const Home = () => {
-  const [loaded, setLoaded] = useState(true);
+  const [loaded, setLoaded] = useState(false);
 
   const showScrollButton = () => {
     if (window.location.hash !== "" && window.location.hash !== "#home") {
