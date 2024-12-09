@@ -1,0 +1,44 @@
+.main-header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 1680px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  .brand {
+    font-size: 12px;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
+  ul {
+    font-size: 18px;
+    li {
+      list-style: none;
+      display: inline-block;
+      a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 200;
+      }
+    }
+    li:not(:last-child) {
+      margin-right: 15px;
+      padding-right: 15px;
+      border-right: 1px solid;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .main-header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

@@ -1,12 +1,7 @@
 import React, { useState } from "react";
-import Footer from "../Footer";
-import "./home.scss";
-import About from "../About";
-import Education from "../Education";
-import Contact from "../Contact";
-import Spinner from "../Spinner";
-import Experience from "../Experience";
 import logo from "../../assets/images/mrm.jpg";
+import "./home.scss";
+import { Link } from "react-router";
 
 const Home = () => {
   const [loaded, setLoaded] = useState(false);
@@ -27,38 +22,36 @@ const Home = () => {
   };
 
   return (
-    <div className="home">
-      {loaded && <Spinner />}
-      <div className="header container" id="home">
+    <div className="container">
+      <div className="home">
+        <div className="bio-logo">
+          <img
+            onLoad={onLoad}
+            src="https://avatars.githubusercontent.com/u/26422326?v=4"
+            alt="mohammed-img"
+          />
+        </div>
         <div className="content">
-          <img onLoad={onLoad} src={logo} alt="mohammed-img" />
-          <div className="content-text">
-            <h1 className="title">
-              <strong>It is nice to meet you</strong>
-            </h1>
-            <div className="info-list">
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#experience">Experience</a>
-              </li>
-              <li>
-                <a href="#education">Education</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </div>
+          <h2>Hello</h2>
+          <div className="about">
+            <h3>A Bit About Me</h3>
+            <p>
+              I enjoy coding, problems solving and interested in new
+              technologies. Experienced Web Developer with a demonstrated
+              history of working in the professional training & coaching
+              industry. Skilled in Cascading Style Sheets (CSS3), HTML5,
+              Node.js, JavaScript ES6, Express.js, Objection.js, Material-ui,
+              Bootstrap, React.js Native, React.js, Redux, MongoDB and
+              PostgreSQL.
+            </p>
+          </div>
+          <div className="links">
+            <Link to="/resume">Resume</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/contact">Contact</Link>
           </div>
         </div>
       </div>
-      <About />
-      <Experience />
-      <Education />
-      <Contact />
-      <Footer />
-      {showScrollButton()}
     </div>
   );
 };
