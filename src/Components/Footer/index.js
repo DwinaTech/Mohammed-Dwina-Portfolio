@@ -28,7 +28,9 @@ const Footer = () => (
         <img src={linkedIn} alt="linkedIn" />
       </a>
     </div>
-    <span className="copyright">&copy; Copy rights DwinaTech {fullYear}</span>
+    <span className="copyright">
+      &copy; Copy rights Mohammed Dwina {fullYear}
+    </span>
   </footer>
 );
 

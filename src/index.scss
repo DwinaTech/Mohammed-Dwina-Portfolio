@@ -30,7 +30,7 @@ h4,
 h5,
 h6 {
   font-weight: 650;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Cabin", sans-serif;
 }
 
 p {
@@ -39,10 +39,17 @@ p {
 
 .container {
   max-width: 1680px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin: auto;
   position: relative;
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 ::-webkit-scrollbar {
