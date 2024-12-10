@@ -24,13 +24,16 @@ const Navbar = () => {
         </div>
         <ul className={`${open ? "open-menu" : ""}`}>
           <li onClick={toggle}>
-            <Link to="/resume">Resume</Link>
-          </li>
-          <li onClick={toggle}>
-            <Link to="/projects">Projects</Link>
+            <Link to="/about">About</Link>
           </li>
           <li onClick={toggle}>
             <Link to="/contact">Contact</Link>
+          </li>
+          <li onClick={toggle}>
+            <Link to="/education">Education</Link>
+          </li>
+          <li onClick={toggle}>
+            <Link to="/experience">Experience</Link>
           </li>
         </ul>
       </div>

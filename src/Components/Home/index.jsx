@@ -46,12 +46,13 @@ const Home = () => {
                 Bootstrap, React.js Native, React.js, Redux, MongoDB and
                 PostgreSQL...
               </span>
+              <Link to="/about">more</Link>
             </p>
           </div>
           <div className="links">
-            <Link to="/resume">Resume</Link>
-            <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
+            <Link to="/education">Education</Link>
+            <Link to="/experience">Experience</Link>
           </div>
         </div>
       </div>
