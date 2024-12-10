@@ -1,26 +1,8 @@
-import React, { useState } from "react";
-import logo from "../../assets/images/mrm.jpg";
+import React from "react";
 import "./home.scss";
 import { Link } from "react-router";
 
 const Home = () => {
-  const [loaded, setLoaded] = useState(false);
-
-  const showScrollButton = () => {
-    if (window.location.hash !== "" && window.location.hash !== "#home") {
-      return (
-        <li className="move-top">
-          <a href="#home">Top</a>
-        </li>
-      );
-    }
-    return null;
-  };
-
-  const onLoad = () => {
-    setLoaded(false);
-  };
-
   return (
     <div className="container">
       <div className="home">
