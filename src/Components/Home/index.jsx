@@ -8,7 +8,6 @@ const Home = () => {
       <div className="home">
         <div className="bio-logo">
           <img
-            onLoad={onLoad}
             src="https://avatars.githubusercontent.com/u/26422326?v=4"
             alt="mohammed-img"
           />
