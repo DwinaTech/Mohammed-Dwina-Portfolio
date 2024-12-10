@@ -10,8 +10,9 @@
   .bio-logo {
     margin-right: 40px;
     img {
-      width: 480px;
-      height: 480px;
+      max-width: 480px;
+      max-height: 480px;
+      width: 100%;
       border-radius: 50%;
     }
   }
@@ -62,6 +63,46 @@
       }
       :nth-child(3) {
         background-color: #80d8da;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .home {
+    flex-direction: column;
+    margin: 20px 0;
+    height: 100%;
+    .bio-logo {
+      margin-right: 0;
+    }
+
+    .content {
+      text-align: center;
+      > h2 {
+        font-size: 60px;
+        margin-bottom: 20px;
+      }
+
+      .about {
+        p {
+          margin-bottom: 20px;
+        }
+        .sub-bio {
+          display: none;
+        }
+      }
+
+      .links {
+        justify-content: center;
+        a {
+          font-size: 18px;
+          width: 100px;
+          height: 100px;
+        }
+        :not(:last-child) {
+          margin-right: 10px;
+        }
       }
     }
   }

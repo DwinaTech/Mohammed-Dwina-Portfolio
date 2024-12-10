@@ -39,10 +39,13 @@ const Home = () => {
               I enjoy coding, problems solving and interested in new
               technologies. Experienced Web Developer with a demonstrated
               history of working in the professional training & coaching
-              industry. Skilled in Cascading Style Sheets (CSS3), HTML5,
-              Node.js, JavaScript ES6, Express.js, Objection.js, Material-ui,
-              Bootstrap, React.js Native, React.js, Redux, MongoDB and
-              PostgreSQL.
+              industry.{" "}
+              <span className="sub-bio">
+                Skilled in Cascading Style Sheets (CSS3), HTML5, Node.js,
+                JavaScript ES6, Express.js, Objection.js, Material-ui,
+                Bootstrap, React.js Native, React.js, Redux, MongoDB and
+                PostgreSQL...
+              </span>
             </p>
           </div>
           <div className="links">
