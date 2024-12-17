@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeSlideIn 0.5s ease;
 
   .bio-logo {
     margin-right: 40px;
@@ -39,6 +40,7 @@
 
     .links {
       display: flex;
+      animation: fadeLinksIn 0.5s ease;
       a {
         text-decoration: none;
         display: flex;
@@ -105,5 +107,28 @@
         }
       }
     }
+  }
+}
+
+/* Keyframe Animation for Smooth Transition */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLinksIn {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

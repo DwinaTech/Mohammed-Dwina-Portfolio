@@ -22,7 +22,7 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faBars} onClick={toggle} />
           )}
         </div>
-        <ul className={`${open ? "open-menu" : ""}`}>
+        <ul className={`nav-menu ${open ? "open-menu" : ""}`}>
           <li onClick={toggle}>
             <Link to="/about">About</Link>
           </li>

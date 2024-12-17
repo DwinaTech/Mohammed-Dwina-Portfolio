@@ -9,6 +9,7 @@
   padding-bottom: 3rem;
   overflow: hidden;
   border-top: 0.1rem solid #dc3545;
+  animation: fadeSlideIn 0.5s ease;
   text-align: left;
 }
 
@@ -43,5 +44,17 @@
   }
   .work-page .content {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Keyframe Animation for Smooth Transition */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
